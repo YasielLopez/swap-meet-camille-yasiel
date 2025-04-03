@@ -16,8 +16,9 @@ class Vendor:
 
     # return the matching item. if the item doesn't exist return none.
     def get_by_id(self, item_id):
-        if item_id == item_id:
-            return item_id
+        for item in self.inventory:
+            if item.id == item_id:
+                return item
         return None
 
     # this swaps the items
