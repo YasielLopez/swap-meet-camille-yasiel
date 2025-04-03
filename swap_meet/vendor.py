@@ -33,14 +33,14 @@ def swap_items(self, other_vendor, my_item, their_item):
     other_vendor.remove(their_item)
     self.add(their_item)
 
-return True
+    return True
 
 # swaps the first item in inventory
 def swap_first_item(self, other_vendor):
     if not self.inventory or not other_vendor.inventory:
         return False
     
-return self.swap_items(
+    return self.swap_items(
     other_vendor,
     self.inventory[0],
     other_vendor.inventory[0]
