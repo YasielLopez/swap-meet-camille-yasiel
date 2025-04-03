@@ -14,3 +14,17 @@ class Item:
 
     def get_category(self):
         return self.__class__.__name__
+    
+    def condition_description(self):
+        if self.condition == 0:
+            return "poor"
+        elif self.condition == 1:
+            return "fair"
+        elif self.condition == 2:
+            return "acceptable"
+        elif self.condition == 3:
+            return "good"
+        elif self.condition == 4:
+            return "like new"
+        else:
+            return "brand new"
