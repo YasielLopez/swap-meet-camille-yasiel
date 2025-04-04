@@ -37,11 +37,7 @@ class Vendor:
         if not self.inventory or not other_vendor.inventory:
             return False
         
-        return self.swap_items(
-        other_vendor,
-        self.inventory[0],
-        other_vendor.inventory[0]
-    )
+        return self.swap_items(other_vendor, self.inventory[0], other_vendor.inventory[0])
 
     # shows the items in the category 
     def get_by_category(self, category):
