@@ -12,15 +12,15 @@ class Item:
         return "Item"
     
     def condition_description(self):
-        if self.condition == 0:
+        if self.condition == 0.0:
             return "poor"
-        elif self.condition == 1:
+        elif self.condition == 1.0:
             return "fair"
-        elif self.condition == 2:
+        elif self.condition == 2.0:
             return "acceptable"
-        elif self.condition == 3:
+        elif self.condition == 3.0:
             return "good"
-        elif self.condition == 4:
+        elif self.condition == 4.0:
             return "like new"
         else:
             return "brand new"
